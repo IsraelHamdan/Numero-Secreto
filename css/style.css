@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+   --font-family:'Josefin Sans', sans-serif;
+   --bg-color: #7DE5ED; 
+   --primary-color: #F2F2F2;
+   --secondary-color: #810CA8;
+   --shadow-color: #E5B8F4;
+}
+
+
+.container { 
+   background: linear-gradient(#E5B8F4, #C147E9, #810CA8, #2D033B); 
+   color: var(--primary-color);
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   margin: 0;
+   font-family: var(--font-family);
+}
+
+.titulo__principal, .titulo__acertou {
+   font-size: 4em;
+}
+
+.titulo__descricao {
+   font-size: 2em;
+   margin-top: 20px;
+}
+
+.mensagem {
+   font-size: 1.5em;
+   margin-top: 40px;
+}
+
+.box {
+   border:  0.8rem inset var(--primary-color);
+   display: inline-block;
+   font-size: 4em;
+   padding: 10px;
+   margin: 20px;
+}
+
+.btn-jogar { 
+   padding: 0.8rem;
+   border: 0;
+   background: var(--primary-color);
+   border-radius: 0.5rem;
+   margin-top: 2rem;
+}
+
+.btn-jogar:hover {
+   background: var(--secondary-color);
+   box-shadow: var(--shadow-color) 1rem;
+
+   color: var(--primary-color);
+   font-size: 1.5rem;
+
+   transition: 100ms;
+}
